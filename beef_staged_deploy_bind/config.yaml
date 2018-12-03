@@ -1,0 +1,15 @@
+#
+# Copyright (c) 2006-2015 Wade Alcorn - wade@bindshell.net
+# Browser Exploitation Framework (BeEF) - http://beefproject.com
+# See the file 'doc/COPYING' for copying permission
+#
+beef:
+    module:
+        Beef_staged_deploy_bind:
+            enable: true
+            category: ["Exploits", "BeEF_bind"]
+            name: "Beef Staged Bindshell Deployer"
+            description: "Pwn internal services with deployed staging shellcode. Both the stager and the stage are delivered.<br />Non-specific shellcode dropper for deploying on systems. As of now, only works effectively on windows hosts...."
+            authors: ["antisnatchor", "tymiller", "Matty"]  # shellcode awesomeness  -> Ty Miller
+            target:
+                working: ["FF"]
